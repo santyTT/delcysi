@@ -1,0 +1,292 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: rgb(0, 0, 0);
+}
+
+/* Asegúrate de que el video cubra toda la pantalla */
+#myVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  object-fit: cover; /* Esto asegura que el video cubra completamente el fondo */
+  z-index: -1; /* Asegura que el video esté en el fondo */
+}
+
+.App {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  color: white; /* Para que el texto sea visible sobre el fondo */
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+
+.presentacion h1 {
+  color: white;
+  font-style: italic;
+  text-align: center;
+  margin-top: 40vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  animation: iniWelcome 10s ease-in-out both;
+  animation-delay: 5s; /* Sin retraso */
+}
+
+.presentacion2 h1 {
+  color: rgb(255, 255, 255);
+  font-style: italic;
+  text-align: center;
+  margin-top: 40vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  animation: iniWelcome2 7s ease-in-out both;
+  animation-delay: 2s; /* Retraso de 0.5 segundos */
+}
+
+.presentacion3 h1 {
+  color: white;
+  font-style: italic;
+  text-align: center;
+  margin-top: 40vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  animation: iniWelcome3 3s ease-in-out both;
+  animation-delay: 0s; /* Retraso de 1 segundo */
+}
+
+.presentacion {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  animation: iniWelcome 7s linear both;
+  animation-delay: 10s;
+  z-index: 1; /* Se ve primero */
+}
+
+.presentacion2 {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  background-color: #000;
+  z-index: 2; /* Se ve después */
+  animation: iniWelcome2 10s linear forwards;
+  animation-delay: 3s; /* Comienza 12 segundos después */
+}
+
+.presentacion3 {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  z-index: 3; /* Se ve al final */
+  animation: iniWelcome3 5s linear forwards;
+  animation-delay: 3s;
+}
+
+@keyframes iniWelcome {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  50% {
+    opacity: 1;
+    visibility: visible;
+  }
+  75% {
+    opacity: 0.5;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+
+@keyframes iniWelcome2 {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  50% {
+    opacity: 1;
+    visibility: visible;
+  }
+  75% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes iniWelcome3 {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  50% {
+    opacity: 1;
+    visibility: visible;
+  }
+  75% {
+    opacity: 0.5;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  background-color: #111; /* Fondo oscuro */
+  color: #f5f5f5; /* Texto blanco */
+  font-family: 'Roboto', sans-serif; /* Tipografía moderna */
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  transform: translateX(230%);
+  text-align: center;
+  margin-bottom: -10px;
+  font-weight: 500;
+  position: absolute;
+  top: 89px;
+  font-family: cursive;
+}
+
+span h4{
+  font-size: 2rem;
+  font-weight: 100;
+  letter-spacing: 4px;
+  font-style: oblique;
+  margin: 10px 0;
+  font-family: cursive;
+  cursor: wait;
+}
+
+span h4:hover {
+  color: #f5f5f5;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  animation: typing 4s steps(30) forwards; /* Aquí ajustas el número de pasos según el texto */
+}
+
+
+span h4:hover::after {
+  content: 'Delcysi :b';
+  color: #f5f5f5;
+  position: absolute;
+  left: 0%;
+  top: 60%;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  animation: typing 4s steps(30) forwards; /* Aquí ajustas el número de pasos según el texto */
+}
+
+@keyframes typing {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+span h4:hover::after {
+  animation: typing 4s steps(30) forwards;
+  transition: opacity 2s; /* Controla la duración de la aparición */
+}
+span h4 {
+  text-align: center;
+  margin-top: 24%;
+}
+
+@media screen and (max-width: 768px) {
+  .counter-container {
+    padding: 10px;
+  }
+
+  span h4 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgb(253, 253, 253);
+    opacity: 0;
+    margin-top: 90%;
+    animation: fadeIn 1s infinite alternate;
+  }
+  span h4:hover::after {
+      content: 'delcysiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii';
+    color: #ff0000;
+    font-size: 0.8rem;
+    margin: 0 5px;
+    position: absolute;
+    left: 0%;
+    top: 49%;
+    width: 100%;
+    z-index: 1;
+    transition: 1s, opacity(0);
+    animation: typing 4s steps(10) forwards; /* Aquí ajustas el número de pasos según el texto */
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  span h4:hover {
+    color: #000000; /* Cambio de color al hacer hover */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 2.5rem;
+  }
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

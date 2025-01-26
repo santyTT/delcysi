@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/santyTT/days-for-love/static/css/main.070978e3.css",
+    "main.js": "/santyTT/days-for-love/static/js/main.8f112fd9.js",
+    "static/js/488.7e8314f8.chunk.js": "/santyTT/days-for-love/static/js/488.7e8314f8.chunk.js",
+    "static/media/backIni.mp4": "/santyTT/days-for-love/static/media/backIni.93dba1000cb39474f51a.mp4",
+    "static/media/logo.svg": "/santyTT/days-for-love/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/santyTT/days-for-love/index.html",
+    "main.070978e3.css.map": "/santyTT/days-for-love/static/css/main.070978e3.css.map",
+    "main.8f112fd9.js.map": "/santyTT/days-for-love/static/js/main.8f112fd9.js.map",
+    "488.7e8314f8.chunk.js.map": "/santyTT/days-for-love/static/js/488.7e8314f8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.070978e3.css",
+    "static/js/main.8f112fd9.js"
+  ]
+}
